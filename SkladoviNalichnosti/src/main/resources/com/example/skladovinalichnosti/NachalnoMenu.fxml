@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FEF1E6;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.skladovinalichnosti.NachalnoMenu">
+   <children>
+      <Button fx:id="SkladFXID" layoutX="274.0" layoutY="163.0" mnemonicParsing="false" onAction="#SkladOnAction" style="-fx-background-color: FFB085;" text="Склад">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></Button>
+      <Button fx:id="AdminFXID" layoutX="274.0" layoutY="219.0" mnemonicParsing="false" onAction="#AdminOnAction" style="-fx-background-color: FFB085;" text="Админ">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></Button>
+      <Button fx:id="LoginFXID" layoutX="531.0" layoutY="14.0" mnemonicParsing="false" onAction="#LoginOnAction" style="-fx-background-color: FFB085;" text="Вход">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></Button>
+      <Button fx:id="RegisterFXID" layoutX="395.0" layoutY="14.0" mnemonicParsing="false" onAction="#RegisterOnAction" style="-fx-background-color: FFB085;" text="Регистрация">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

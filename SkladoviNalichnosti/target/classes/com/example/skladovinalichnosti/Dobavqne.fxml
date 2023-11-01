@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="467.0" prefWidth="764.0" style="-fx-background-color: FEF1E6;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.skladovinalichnosti.Dobavqne">
+   <children>
+      <Button fx:id="AddFXID" layoutX="353.0" layoutY="411.0" mnemonicParsing="false" onAction="#AddOnAction" style="-fx-background-color: FFB085;" text="Добави">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></Button>
+      <TextField fx:id="NameFXID" layoutX="91.0" layoutY="345.0" onAction="#NameOnaction" promptText="Име" style="-fx-background-color: F9D5A7;">
+         <font>
+            <Font name="Bookman Old Style" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="KolichestvoFXID" layoutX="307.0" layoutY="345.0" onAction="#KolichestvoOnAction" promptText="Количество" style="-fx-background-color: F9D5A7;">
+         <font>
+            <Font name="Bookman Old Style" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="CenaFXID" layoutX="510.0" layoutY="345.0" onAction="#CenaOnAction" promptText="Цена" style="-fx-background-color: F9D5A7;">
+         <font>
+            <Font name="Bookman Old Style" size="12.0" />
+         </font></TextField>
+      <TableView fx:id="AdminView" layoutX="45.0" layoutY="30.0" prefHeight="257.0" prefWidth="684.0" style="-fx-background-color: F9D5A7;">
+        <columns>
+          <TableColumn fx:id="Id" prefWidth="59.20001220703125" style="-fx-background-color: #FFFFFF;" text="ID" />
+          <TableColumn fx:id="Name" prefWidth="184.79999542236328" style="-fx-background-color: #FFFFFF;" text="Име" />
+            <TableColumn fx:id="Kolichestvoo" prefWidth="138.4000244140625" style="-fx-background-color: #FFFFFF;" text="Количество" />
+            <TableColumn fx:id="Cena" prefWidth="104.79995727539062" style="-fx-background-color: #FFFFFF;" text="Цена" />
+            <TableColumn fx:id="Data" prefWidth="196.00006103515625" style="-fx-background-color: #FFFFFF;" text="Дата" />
+        </columns>
+      </TableView>
+      <Button fx:id="BackFXID" layoutX="712.0" mnemonicParsing="false" onAction="#BackOnAction" style="-fx-background-color: FFB085;" text="Назад">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></Button>
+      <Label fx:id="LabelFXID" layoutX="376.0" layoutY="383.0" prefHeight="18.0" prefWidth="22.0" />
+      <Button fx:id="View" layoutX="65.0" layoutY="411.0" mnemonicParsing="false" onAction="#ViewOnAction" style="-fx-background-color: FFB085;" text="Отвори таблицата">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

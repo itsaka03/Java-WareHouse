@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FEF1E6;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.skladovinalichnosti.Register">
+   <children>
+      <Button fx:id="RegisterFXID" layoutX="207.0" layoutY="265.0" mnemonicParsing="false" onAction="#RegisterOnAction" style="-fx-background-color: FFB085;" text="Регистрация">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></Button>
+      <Button fx:id="LoginFXID" layoutX="350.0" layoutY="265.0" mnemonicParsing="false" onAction="#LoginOnAction" style="-fx-background-color: FFB085;" text="Вход">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></Button>
+      <TextField fx:id="NameFXID" layoutX="225.0" layoutY="72.0" onAction="#NameOnAction" promptText="Име" style="-fx-background-color: F9D5A7;">
+         <font>
+            <Font name="Bookman Old Style" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="EmailFXID" layoutX="226.0" layoutY="119.0" onAction="#EmailOnAction" promptText="Имейл" style="-fx-background-color: F9D5A7;">
+         <font>
+            <Font name="Bookman Old Style" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="PhoneFXID" layoutX="226.0" layoutY="211.0" onAction="#PhoneOnAction" promptText="Телефон" style="-fx-background-color: F9D5A7;">
+         <font>
+            <Font name="Bookman Old Style" size="12.0" />
+         </font></TextField>
+      <PasswordField fx:id="PassFXID" layoutX="226.0" layoutY="165.0" onAction="#PassOnAction" promptText="Парола" style="-fx-background-color: F9D5A7;">
+         <font>
+            <Font name="Bookman Old Style" size="12.0" />
+         </font></PasswordField>
+      <Label fx:id="LabelFXID" layoutX="218.0" layoutY="241.0" prefHeight="18.0" prefWidth="163.0" />
+   </children>
+</AnchorPane>

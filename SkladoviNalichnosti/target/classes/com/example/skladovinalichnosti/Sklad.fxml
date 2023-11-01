@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="518.0" prefWidth="807.0" style="-fx-background-color: FEF1E6;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.skladovinalichnosti.Sklad">
+   <children>
+      <Button fx:id="AddFXID" layoutX="374.0" layoutY="364.0" mnemonicParsing="false" onAction="#AddOnAction" style="-fx-background-color: FFB085;" text="Добави">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></Button>
+      <Button fx:id="RemoveFXID" layoutX="565.0" layoutY="364.0" mnemonicParsing="false" onAction="#RemoveOnAction" style="-fx-background-color: FFB085;" text="Изтрии">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></Button>
+      <TableView fx:id="AdminView" layoutY="34.0" prefHeight="284.0" prefWidth="820.0" style="-fx-background-color: F9D5A7;">
+        <columns>
+          <TableColumn fx:id="Id" prefWidth="75.0" style="-fx-background-color: #FFFFFF;" text="ID" />
+          <TableColumn fx:id="Name" prefWidth="222.40000915527344" style="-fx-background-color: #FFFFFF;" text="Име" />
+            <TableColumn fx:id="Kolichestvoo" prefWidth="108.79998779296875" style="-fx-background-color: #FFFFFF;" text="Количество" />
+            <TableColumn fx:id="Cena" prefWidth="106.39996337890625" style="-fx-background-color: #FFFFFF;" text="Цена" />
+            <TableColumn fx:id="Data" prefWidth="167.9998779296875" style="-fx-background-color: #FFFFFF;" text="Дата" />
+            <TableColumn fx:id="Email" prefWidth="132.800048828125" style="-fx-background-color: #FFFFFF;" text="Имейл" />
+        </columns>
+      </TableView>
+      <Button fx:id="BackFXID" layoutX="743.0" layoutY="8.0" mnemonicParsing="false" onAction="#BackOnAction" style="-fx-background-color: FFB085;" text="Назад">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></Button>
+      <Button fx:id="View" layoutX="101.0" layoutY="364.0" mnemonicParsing="false" onAction="#ViewOnAction" style="-fx-background-color: FFB085;" text="Отвори таблицата">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
